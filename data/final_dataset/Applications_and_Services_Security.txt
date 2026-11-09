@@ -1,0 +1,18 @@
+Applications and Services Security
+
+Recommended Security Practices:
+
+1. Delete applications that you do not use. Unused applications are rarely patched, and existing vulnerabilities may be exploited.
+2. Disable nonessential services running on your computer.
+3. Pay special attention to:
+   - File Sharing
+   - Print Sharing
+
+Technical Support Contact:
+
+Information Technology & Communications Center (ITCC)
+Phone: +962 2 7201000 Ext. 24010
+Fax: +962 2 7201033
+Email: itcc@just.edu.jo
+
+Source: JUST Service Details - Applications and Services.

@@ -1,0 +1,20 @@
+Data Backup Guidelines
+
+Regularly back up your computer data.
+
+Why Backups Are Important:
+Computer hardware may fail. Data may also be deleted accidentally or maliciously by malware or an intruder.
+
+Recommended Backup Practices:
+1. Perform a full system backup.
+2. Follow it with regular incremental backups.
+3. Create a backup before making any changes to your computer.
+
+Technical Support Contact:
+
+Information Technology & Communications Center (ITCC)
+Phone: +962 2 7201000 Ext. 24010
+Fax: +962 2 7201033
+Email: itcc@just.edu.jo
+
+Source: JUST Service Details - Backup.

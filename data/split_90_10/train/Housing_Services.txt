@@ -1,0 +1,170 @@
+JUST - Student Housing Services
+
+Internal services:
+- Seven kitchens in each building, equipped with cooking and food-storage facilities.
+- Study halls on each floor.
+- Lounges with TV and satellite.
+- Reception rooms for families.
+- Prayer rooms.
+- Laundry rooms with automatic washers and dryers.
+- Heating during winter and hot water throughout the year.
+- Wireless internet in student rooms and common areas.
+- Cleaning staff for shared spaces.
+- Air-conditioned studio rooms in Building B4 and Princess Basma Residence.
+- Security cameras at building entrances.
+
+External services:
+- Shuttle buses between residence buildings and university faculties.
+- Daily free shuttle service between student housing and Irbid after class hours.
+- Commercial complex with cafeteria, dry cleaning, bookstore, mini-market, and salon.
+- Healthcare services: daytime campus clinics and nighttime emergency and ambulance services through King Abdullah University Hospital.
+- Round-the-clock maintenance services.
+
+Student life:
+- Recreational trips.
+- Sports events.
+- Cultural and educational activities, workshops, competitions, and exhibitions.
+- Supervisors available 24/7 for psychological, social, and academic counseling.
+
+Contact:
+Phone: +962 2 7201000 Ext. 22466
+Email: studentaffairs@just.edu.jo
+Address: P.O. Box 3030, Irbid 22110, Jordan
+
+Source note:
+Information extracted from the supplied JUST housing services page.
+Service availability and details should be confirmed with the university.
+
+Additional Information from JUST Student Life Page
+
+Female Student Accommodation:
+- The university provides accommodation for female students during their studies.
+- The residence accommodates Arab and foreign female students alongside Jordanian students.
+
+Housing Activities:
+- Excursions for Jordanian and non-Jordanian students residing in the university housing.
+- Sports activities inside residence stadiums or university stadiums.
+- Cultural and educational activities.
+- Cultural, sports, and artistic courses and competitions.
+
+Source: JUST Student Life page.
+
+
+Female Student Housing - Fees and Room Types
+
+The source lists the following accommodation options
+for buildings 1-10:
+
+1. Single room with private bathroom and refrigerator,
+   shared kitchen: JD 660 per semester.
+
+2. Single room with refrigerator, shared bathroom
+   and shared kitchen: JD 492 per semester.
+
+3. Double room with shared bathroom and kitchen:
+   JD 500 per semester in one part of the source.
+
+4. Single studio with kitchen, bathroom, air conditioning,
+   refrigerator, and microwave: JD 250 per semester.
+
+5. Double studio with kitchen, bathroom, air conditioning,
+   refrigerator, and microwave: JD 500 per semester.
+
+6. Triple room with shared facilities:
+   JD 250 per student per semester.
+
+7. Double room with shared bathroom and kitchen:
+   JD 600 per semester in another part of the source,
+   shared equally between the two students.
+
+Princess Basma Female Residence:
+The source mentions:
+- Single room in the first wing.
+- Single room in the second wing.
+- Double room with kitchen and bathroom.
+- Double room with bathroom.
+
+The extracted text displays fees of JD 1000, JD 1050,
+JD 400, and JD 500 for these room options, respectively.
+The exact mapping between each fee and room description
+is unclear in the extracted text.
+
+Additional Fees:
+- A one-time deposit of JD 50 is paid upon registration.
+- Summer semester accommodation fees are half the
+  regular semester fees.
+
+Important Data Quality Notes:
+- The source gives two different fees for a double room
+  in buildings 1-10: JD 500 and JD 600.
+- The Princess Basma room-fee mapping is unclear.
+- These differences have been preserved and not reconciled
+  by guessing.
+
+Housing Office Contact:
+Arab, Foreign Students and Minorities Office.
+Phone: +962 2 7201000.
+Fax: +962 2 7095123.
+Email: iso@just.edu.jo
+
+Official Female Housing Page:
+https://www.just.edu.jo/ar/Iso/Pages/Housing.aspx
+
+Source: JUST Female Student Housing page.
+
+
+Student Housing Application Procedure
+
+Students can apply for on-campus housing electronically
+through the Student Services page.
+
+Application Link:
+https://services.just.edu.jo/stuservices
+
+Application Steps:
+1. Open the Student Services page using the link above.
+2. Select "Student Housing Registration".
+3. Enter the required information in the on-campus
+   student housing registration form.
+4. Click "Save Application".
+5. Click "Approve Application" to submit it for review.
+6. A message will be sent to the student's university email
+   with the application acceptance and details about
+   completing the remaining procedures.
+
+Housing Department Contact:
+- Department: Student Housing Department.
+- Phone: +962 2 7201000, Extension 22466.
+- Fax: +962 2 7201043.
+- Email: studentaffairs@just.edu.jo.
+
+Source: JUST Student Housing Application page.
+
+
+Student Housing - General Information
+
+The university provides on-campus accommodation for students
+coming from:
+- Arab countries.
+- Islamic countries.
+- Friendly countries.
+- Different governorates within Jordan.
+
+Objectives of Student Housing:
+- Strengthening relationships among students.
+- Encouraging students to live together and cooperate.
+- Providing a comfortable home-like living environment.
+- Providing services needed by students in general.
+- Giving particular attention to the needs of students with disabilities.
+
+Housing Regulations:
+The Student Housing Department applies specific regulations
+and instructions that residents, including students with disabilities,
+are expected to observe and follow.
+
+Source: JUST Student Housing Department official homepage.
+https://www.just.edu.jo/ar/Deanships/DeanshipofStudentsAffairs/Departments/housingservices/Pages/default.aspx
+
+Data Quality Note:
+The extracted homepage mentions housing regulations but does not
+include the detailed text of those regulations.

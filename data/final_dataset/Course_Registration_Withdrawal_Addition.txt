@@ -1,0 +1,62 @@
+JUST Course Registration, Withdrawal, and Addition Guide
+
+1. Accessing the Registration System
+
+Students can access course registration through:
+JUST Website > Students > Course Registration
+
+Direct link:
+https://services.just.edu.jo/sturegistration
+
+Students must:
+- Enter their university ID and password.
+- Complete the identity verification (I'm not a robot).
+- Access the system during their assigned registration time.
+- Check their registration appointment through the Student Services page.
+
+2. Registering Courses
+
+Students can register courses by:
+- Entering the course line number and section number.
+- Selecting courses from the available courses for registration.
+
+3. Deleting a Course
+
+- Click the Delete option next to the course.
+- The total registered credit hours must not fall below 9 credit hours.
+- Students are advised not to delete courses that are prerequisites for other courses to avoid delaying their academic plans.
+- The academic plan can be checked through Student Services > Registration > Academic Plan.
+
+4. Changing a Course Section
+
+- Click the Change Section option.
+- Select an available section and its offered time.
+- Alternatively, enter the section number directly.
+- Click Save next to the course to confirm the change.
+
+5. Finding a Course Line Number
+
+If students do not know the course line number, they can consult their indicative academic plan through the Student Services platform.
+
+6. Checking Open Course Sections
+
+Students can visit the university website and open the Study Schedule.
+Select the college and department offering the course to view the department courses and section status.
+
+7. Registration Rules and Restrictions
+
+- Students may access the registration website only during their assigned registration period.
+- The withdrawal and addition period begins after the final registration period ends.
+- Annual-system students in Doctor of Medicine and Dentistry programs must follow the indicative schedule and cannot delete any scientific course.
+- The maximum undergraduate study load in the first and second semesters is 18 credit hours.
+- The minimum study load is 9 credit hours.
+- The maximum undergraduate study load in the summer semester is 10 credit hours.
+- Students must pay the required university fees before accessing registration for the courses they wish to register.
+
+8. Additional Instructions
+
+- The source states that not using the logout link after registration results in a five-minute waiting period before the next login.
+- Students are asked to provide their mobile phone number to receive important information and dates through WhatsApp.
+- The source includes a special notice for newly admitted Nursing students holding a three-year Nursing diploma, but the extracted text does not provide the complete instruction.
+
+Source: JUST - Course Registration, Withdrawal, and Addition Guide.

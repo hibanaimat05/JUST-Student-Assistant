@@ -1,0 +1,36 @@
+
+JUST Deanship of Student Affairs - Contact Directory
+
+General Contact Information:
+- University: Jordan University of Science and Technology (JUST)
+- Department: Deanship of Student Affairs
+- Phone: +962 2 7201000
+- Extension: 22466
+- Fax: +962 2 7201043
+- Email: studentaffairs@just.edu.jo
+- Postal Address: P.O. Box 3030, Irbid 22110, Jordan
+
+Official Contact Page:
+https://www.just.edu.jo/ar/Deanships/DeanshipofStudentsAffairs/Pages/Contacts.aspx
+
+Departments, Offices, and Sections Mentioned:
+
+1. Career Guidance and Alumni Follow-up Office
+2. Student Activities and Initiatives Department
+3. Student Activities Section
+4. Student Initiatives Section
+5. Student Bodies and Youth Empowerment Section
+6. Arab and Foreign Students Office
+7. Female Student Housing Department
+8. Housing Supervision Section
+9. Student Loans and Financial Assistance Section
+10. Student Issues Section
+11. Sports Organization Section
+12. Scouts and Camps Section
+13. Sports Halls and Playgrounds Section
+14. Fitness and Swimming Pool Section
+
+Data Quality Note:
+The source contains employee names, job titles, phone extensions, and email addresses.
+Some table entries were corrupted during text extraction. Unclear employee contact
+details have therefore not been included in this cleaned directory.

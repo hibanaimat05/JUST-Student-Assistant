@@ -1,0 +1,66 @@
+JUST Wireless Network (WLAN) Setup
+
+1. Network Setup for Older Windows Versions
+
+Step 1: Right-click the Internet icon and select "Open Network and Internet Settings".
+
+Step 2: Scroll down and open "Network and Sharing Center".
+
+Step 3: Select "Set up a new connection or network".
+
+Step 4: Select "Manually connect to a wireless network" and click "Next".
+
+Step 5: Enter the network name:
+- JUST WLAN for students generally.
+- JUST Dorm or JUST-Dorm for students living in the university housing compound.
+The source contains both spellings for the dorm network.
+
+Step 6: Select "WPA2-Enterprise" as the Security type and click "Next".
+
+Step 7: When the dialog appears, click "Change connection settings".
+
+Step 8: Open the "Security" tab and click "Settings".
+
+Step 9: Make sure "Verify the server's identity by validating the certificate" is unchecked.
+For Windows 7, the corresponding option is "Validate Server Certificate".
+
+Step 10: Click "Configure".
+
+Step 11: Make sure "Automatically use my Windows logon name and password (and domain if any)" is unchecked, then click "OK".
+
+Step 12: Click "OK".
+
+Step 13: Return to the Security tab and click "Advanced Settings".
+
+Step 14: Check "Specify Authentication mode".
+
+Step 15: Select "User Authentication" from the drop-down menu.
+
+Step 16: Click "Save credentials".
+
+Step 17: Enter the student ID and Wireless password.
+Students admitted before 2017 should use their old ID for the wireless account.
+
+Step 18: Click "OK" in all open windows to complete the setup.
+
+2. Requesting a Wireless Access Point
+
+An official letter to CIC is required to request an access point.
+
+3. Reporting a Network Malfunction
+
+Open a service ticket through:
+https://hd.just.edu.jo/helpdesk
+
+Alternatively, call the Helpdesk at Extension 500.
+
+4. Contact Information
+
+Jordan University of Science and Technology
+Information Technology & Communications Center (ITCC)
+
+Phone: +962 2 7201000 Ext. 24010
+Fax: +962 2 7201033
+Email: itcc@just.edu.jo
+
+Source: JUST Service Details - Wireless Network (WLAN).

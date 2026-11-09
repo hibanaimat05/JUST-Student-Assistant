@@ -1,0 +1,18 @@
+Links and Attachments in Email Messages
+
+Recommended Security Practices:
+
+1. Do not click links or open attachments in email messages received from known or unknown senders.
+2. Hover your mouse over a link to check whether the visible URL is an alias for the actual URL.
+3. Copy and paste the URL into your web browser.
+4. Check with the sender before opening unsolicited attachments.
+5. Do not assume that an email was sent by someone you know just because their name appears in the FROM field.
+
+Technical Support Contact:
+
+Information Technology & Communications Center (ITCC)
+Phone: +962 2 7201000 Ext. 24010
+Fax: +962 2 7201033
+Email: itcc@just.edu.jo
+
+Source: JUST Service Details - Links and Attachments in Email Messages.

@@ -1,0 +1,224 @@
+JUST Student Health Services
+
+- Student health services are provided through the Health Care Center
+  located in Irbid.
+- Students pay health insurance fees during registration.
+- The insurance covers services offered by the health center,
+  except certain services such as plastic surgery and providing
+  eyeglasses or hearing aids.
+- Walk-in services are available 24 hours a day, seven days a week
+  through general practitioners and clinics.
+- Specialized clinics require appointments.
+
+Clinic hours stated in the source:
+- General medicine clinic: 8:00 AM to 5:00 PM.
+- Specialized clinics: 10:30 AM to 1:00 PM and 2:00 PM to 5:00 PM,
+  Sunday through Thursday.
+
+Hospitalization services are provided through:
+- Princess Basma Teaching Hospital in Irbid.
+- King Abdullah University Hospital (KAUH).
+
+Source: JUST Student Life page.
+
+
+JUST Health Center - About Us
+
+Establishment:
+JUST Health Center was established in 1986 when the university
+first opened its doors.
+
+Location:
+The center is located opposite Prince Al-Hasan Youth Sport City
+in Irbid. Transportation and parking are available.
+
+The center provides low-cost primary healthcare services to
+the communities of JUST University, Yarmouk University,
+Al-Albayt University, and others.
+
+Accreditation:
+The center has maintained accreditation by the Health Care
+Accreditation Council (HCAC) since 2011.
+
+Medical Services
+
+1. Preventive and Therapeutic Services:
+- Family medicine clinics.
+- Pediatric clinic.
+- Well-baby clinic.
+- Women's health and family planning clinic.
+- Breast cancer screening clinic.
+- Optometry clinic.
+- Nutrition clinic.
+- Smoking cessation clinic.
+
+2. Diagnostic Services:
+
+Diagnostic Laboratory:
+- Biochemistry.
+- Hematology.
+- Microbiology.
+- Urine and stool studies.
+- Hormone and serology tests.
+
+Diagnostic Radiology:
+- X-ray.
+- Ultrasound.
+- Mammogram.
+
+3. Pharmaceutical Services:
+- Medication therapy management.
+- Vaccines administered on site.
+- Medication counseling.
+- Smoking cessation support.
+
+4. Training and Teaching Services:
+- Family medicine residents.
+- Fifth-year medical students.
+- Pharmacy students.
+- Nursing students.
+- Medical laboratory students.
+- Postgraduate students in different fields.
+
+5. Community Health Services:
+- Free medical days.
+- Health awareness campaigns.
+
+Health Center Contact:
+Phone: +962 2 7201000, Extension 28216.
+Fax: +962 2 7247538.
+Email: hc@just.edu.jo.
+Address: P.O. Box 3030, Irbid 22110, Jordan.
+
+Source:
+
+Health Center Clinics - Working Days and Hours
+
+The following clinic schedule and client visit numbers
+are taken from the source for the year 2025.
+
+1. Family Medicine Clinic
+Days: Daily except Friday.
+Hours: 8:00 AM - 9:00 PM.
+Client visits in 2025: 51,203.
+
+2. Emergency Clinic
+Days: Daily.
+Hours: 9:00 AM - 3:00 PM.
+Client visits in 2025: 75.
+
+3. Pediatric Clinic
+Days: Sunday to Thursday.
+Hours: 9:00 AM - 4:00 PM.
+Client visits in 2025: 1,595.
+
+4. Healthy Child Clinic
+Days: Sunday to Thursday.
+Hours: 9:00 AM - 4:00 PM.
+Client visits in 2025: 349.
+
+5. Chronic Diseases Clinic
+Days: Sunday to Thursday.
+Hours: 9:00 AM - 4:00 PM.
+Client visits in 2025: 7,998.
+
+6. Minor Surgery Clinic
+Days: According to the appointment list.
+Hours: 9:00 AM - 4:00 PM.
+Client visits in 2025: 229.
+
+7. Family Planning and Woman Health Clinic
+Days: Thursday.
+Hours: 9:00 AM - 1:30 PM.
+Client visits in 2025: 140.
+
+8. Pregnant Woman Care Clinic
+Days: Thursday.
+Hours: 9:00 AM - 1:30 PM.
+Client visits in 2025: 191.
+
+9. Breast Cancer Screening Clinic
+Days: Sunday to Thursday.
+Hours: 9:00 AM - 4:00 PM.
+Client visits in 2025: 104.
+
+10. University Clinic
+Days: Sunday to Thursday.
+Hours: 9:00 AM - 4:00 PM.
+Client visits in 2025: 4,419.
+
+Schedule Contact:
+Email: hc@just.edu.jo.
+
+Source:
+JUST Health Center - Clinics
+https://www.just.edu.jo/Centers/HealthCenter/Pages/Clinics-Dates.aspx
+
+Data Quality Note:
+Clinic names, schedule details, and client visit numbers
+are transcribed from the extracted source. The source extraction
+contains OCR errors in some table headings.
+
+
+Health Center - Appointment Booking Procedures
+
+The source provides appointment booking methods for the
+following health services.
+
+1. Reception Desk Booking
+
+Appointments can be booked by calling the reception desk
+or by visiting in person.
+
+Services:
+- Diabetic Clinic.
+- Chronic Diseases Clinic.
+- Family Planning and Woman Health Clinic.
+- Antenatal Clinic.
+- Vision Screening Clinic.
+
+Phone:
++962 2 7201000, Extension 28208.
+
+2. Nursing Division Booking
+
+Services:
+- Breast Cancer Screening Clinic.
+- Smoking Cessation Clinic.
+
+Appointments can be booked by calling the nursing staff
+at the provided phone numbers or by visiting in person.
+
+Phone:
++962 2 7201000, Extensions 28214 and 28210.
+
+3. Minor Procedures and Medical Imaging
+
+Minor Procedures Clinic:
+Patients must bring the physician's request for the minor
+procedure to the Head of Nursing Division to book an appointment.
+
+Ultrasound Scanning Imaging:
+Patients must bring the physician's imaging request
+to the Radiology Division to book an appointment.
+
+Mammogram Imaging:
+Patients must bring the physician's imaging request
+to the Radiology Division to book an appointment.
+
+Additional Department Phone Numbers:
+28203 or 28248.
+The extracted table does not clearly identify which number
+belongs to each department.
+
+Health Center Contact:
+Email: hc@just.edu.jo.
+
+Source:
+JUST Health Center - Appointment Booking
+https://www.just.edu.jo/Centers/HealthCenter/Pages/Appointment-Booking-up.aspx
+
+Data Quality Note:
+The extracted table contains OCR formatting errors.
+Phone numbers 28203 and 28248 are preserved without assigning
+them to a specific department.

@@ -1,0 +1,24 @@
+
+JUST Students Application
+
+The JUST Students application is the official mobile application
+for students of Jordan University of Science and Technology.
+
+It is developed by the university's Information Technology and
+Communications Center team.
+
+The application supports both Arabic and English languages.
+
+Note: The available source does not provide the complete list
+of application services.
+
+
+Moodle Mobile Application
+
+The Moodle mobile application allows students to access their
+Moodle Learning Management System courses anytime and anywhere.
+
+Students can browse course content even without an internet connection.
+
+Note: These details describe the general Moodle application.
+They do not confirm specific JUST configuration or procedures.

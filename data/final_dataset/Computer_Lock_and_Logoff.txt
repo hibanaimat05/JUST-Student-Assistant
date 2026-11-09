@@ -1,0 +1,17 @@
+Computer Lock and Log Off
+
+Recommended Security Practices:
+
+1. Lock your computer whenever you walk away.
+2. Enable automatic locking after a short period of inactivity.
+3. Log off your computer and applications when you plan to be away for a longer period.
+4. Shut down your computer when it is not in use to avoid being hacked.
+
+Technical Support Contact:
+
+Information Technology & Communications Center (ITCC)
+Phone: +962 2 7201000 Ext. 24010
+Fax: +962 2 7201033
+Email: itcc@just.edu.jo
+
+Source: JUST Service Details - Lock and Log Off.

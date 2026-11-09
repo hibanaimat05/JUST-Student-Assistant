@@ -1,0 +1,104 @@
+JUST New Students Academic Schedule Guide
+
+1. Viewing the Academic Schedule
+
+New students can view their academic schedule through:
+
+JUST Website > Students > Course Registration
+
+Direct link:
+https://services.just.edu.jo/sturegistration
+
+The university automatically builds the academic schedule for newly admitted students. Students do not need to visit the Admission and Registration Unit for this process.
+
+Important condition:
+Students must have taken the placement examinations or have an approved placement examination equivalency from the relevant dean.
+
+2. Accessing the Registration Page
+
+Students must:
+- Enter their university ID and password correctly.
+- Complete identity verification by selecting "I'm not a robot".
+- Enter their mobile phone number when requested.
+- Access the course registration page to view registered courses and credit hours.
+
+3. Checking Remaining Fees and Electronic Payment
+
+Students can select "Electronic Payment Number and Required Fees" to:
+
+- Check the remaining fees for registered credit hours.
+- Enter the number of credit hours they wish to retain to calculate the remaining amount due.
+- View the electronic payment number used for eFAWATEERcom.
+
+Payment methods mentioned in the source:
+
+A. eFAWATEERcom:
+- University: Jordan University of Science and Technology.
+- Service: Deposit into the student's balance.
+
+B. Payment through any branch of Cairo Amman Bank.
+
+The electronic payment number shown in the source is an illustrative example and must not be treated as a general student payment number.
+
+4. Deleting a Course
+
+- Students can delete a course using the Delete option next to it.
+- The registered credit hours must not fall below 9.
+- Students are advised not to delete courses that are prerequisites for other courses, to avoid delaying their academic plans.
+
+5. Changing a Course Section
+
+- Select the Change Section option.
+- Choose an available section and its offered time.
+- Alternatively, enter the section number directly.
+- Save the change next to the course.
+
+6. Registering University Electives or Previously Deleted Courses
+
+To register a university elective or a course previously deleted from the indicative academic plan:
+
+- Enter the course line number in the line number field at the top of the page.
+- Click Open Sections, or enter the section number directly.
+- Complete the "I'm not a robot" verification.
+- Click Register.
+
+7. Finding University Elective Courses
+
+Students can find university elective courses through:
+
+Student Services > Registration > Academic Plan.
+
+8. Finding a Deleted Course Line Number
+
+If a student does not know the line number of a previously deleted course, they can consult the indicative academic plan through the Student Services platform.
+
+9. Checking Open Course Sections
+
+Students can browse open course sections through the university Study Schedule page.
+
+Select the college and department offering the course to view its courses and section status.
+
+10. Special Registration Rules
+
+Annual-System Students:
+- Students in Doctor of Medicine and Dentistry programs must follow the indicative academic schedule.
+- They are not allowed to delete scientific courses.
+- They can only change the course time.
+
+Courses Outside the Indicative Plan:
+- Students cannot add courses outside their indicative academic plan, except for university elective courses.
+- The study load must not exceed 18 credit hours.
+
+Schedule Modification and Fees:
+- The source states that the schedule can only be modified after paying the fee difference or meeting the stated payment requirement for the credit hours to be retained.
+- The exact wording of this payment condition in the extracted source is unclear.
+
+Bridging Students:
+- Bridging students register their courses themselves through the registration page.
+- They can consult the department chair or college to identify available courses before course equivalency is completed.
+
+11. Additional Notice
+
+The source includes a special notice for newly admitted Nursing students holding a three-year Nursing diploma, but the exact course instruction is not sufficiently clear in the extracted text.
+
+Source: JUST - Procedures for Obtaining the Academic Schedule for New Students.

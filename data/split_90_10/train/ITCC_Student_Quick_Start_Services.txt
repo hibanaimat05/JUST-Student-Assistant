@@ -1,0 +1,27 @@
+JUST Student Quick-Start Services from ITCC
+
+The Information Technology & Communications Center (ITCC) provides students with access to the following services:
+
+1. Forgot Student Services Password
+   Provides access to the student services password recovery service.
+
+2. Change Student Services Password
+   Provides access to the student services password change service.
+
+3. Connect to JUST WiFi
+   Provides instructions for connecting to the university wireless network.
+
+4. Build a Personal Website
+   Provides guidance for creating a personal student website.
+
+5. Download Software from Microsoft Azure Portal
+   Provides access to software downloads through the Microsoft Azure Portal.
+
+ITCC Contact Information:
+
+Information Technology & Communications Center
+Phone: +962 2 7201000 Ext. 24010
+Fax: +962 2 7201033
+Email: itcc@just.edu.jo
+
+Source: JUST - Students Get Started Services from ITCC.

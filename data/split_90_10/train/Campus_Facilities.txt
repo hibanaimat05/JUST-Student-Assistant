@@ -1,0 +1,48 @@
+
+JUST Campus Facilities
+
+1. Social Room
+
+The university provides a Social Room for students.
+
+The source images show:
+- Tables and chairs for group seating.
+- Seating areas for students.
+- Students gathering and interacting in groups.
+
+The source does not specify the room's opening hours,
+reservation procedure, or exact building location.
+
+2. Religious Facilities
+
+The university provides religious facilities on campus.
+
+The source images show:
+
+A. Mosque:
+- A mosque building located on campus.
+
+B. Meditation and Prayer Room:
+- A room identified by the sign "Meditation and Prayer Room".
+- Prayer rugs and seating furniture are visible inside.
+
+3. Cafeteria
+
+The Campus Facilities page includes a Cafeteria section.
+Detailed cafeteria information is documented separately
+in Student_Cafeteria_Services.txt.
+
+Contact Information
+
+Department: Deanship of Student Affairs
+Phone: +962 2 7201000, Extension 22466
+Fax: +962 2 7201043
+Email: studentaffairs@just.edu.jo
+
+Source:
+JUST Campus Facilities
+https://www.just.edu.jo/Deanships/DeanshipofStudentsAffairs/Pages/CampusFacilities.aspx
+
+Data Quality Note:
+The descriptions above are limited to the visible text
+and facilities shown in the source images.

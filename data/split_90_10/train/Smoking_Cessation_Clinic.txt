@@ -1,0 +1,103 @@
+JUST Smoking Cessation Clinic
+
+Official Website:
+https://www.just.edu.jo/WellnessClinics/SmokingCessationClinic/Pages/default.aspx
+
+Vision:
+Towards a smoke-free university community.
+
+Mission:
+To contribute to reducing smoking rates within the university by:
+- Providing scientific awareness about the harms of tobacco
+  and smoking in all its forms.
+- Assisting people who wish to quit smoking.
+- Offering the necessary medical advice.
+
+Clinic Objectives:
+1. Spreading awareness about smoking in all its forms.
+2. Organizing lectures and seminars by specialists about
+   the importance of quitting smoking from health,
+   psychological, financial, and religious perspectives.
+3. Participating in raising community awareness, especially
+   among school students, about the dangers of smoking.
+4. Organizing regular activities to highlight the role of
+   students in combating smoking.
+5. Providing accurate medical advice to employees and students
+   who wish to quit tobacco products and smoking.
+
+Awareness Activities:
+- Lectures and seminars.
+- Community awareness activities.
+- Student awareness initiatives.
+- Events and workshops.
+- Participation in new-student orientation activities.
+
+Contact Information:
+- Phone: +962 2 7201000.
+- Extension: Not clearly available in the extracted source.
+- Fax: +962 2 7201065.
+- Email: Not available in the extracted source.
+
+Data Quality Note:
+The clinic's email address and telephone extension were not
+readable in the source extraction. They have not been guessed.
+
+Source: JUST Smoking Cessation Clinic official page.
+
+
+Clinic Services - Additional Confirmation
+
+The clinic offers services and assistance to both university
+students and employees who wish to quit smoking.
+
+The services include:
+- Awareness about all forms of smoking.
+- Specialist lectures and seminars.
+- Community awareness activities.
+- Regular student activities to combat smoking.
+- Medical advice for people wishing to quit tobacco products.
+
+Source: JUST Smoking Cessation Clinic - Services page.
+
+
+Clinic Contact Details - Contact Us Page
+
+Clinic Location:
+Jordan University of Science and Technology,
+near the university library.
+
+Telephone Numbers Displayed in the Source:
+- 26368
+- 26369
+- University telephone: +962 2 7201000
+
+Email Displayed in the Source:
+quit@just.edujo
+
+Fax:
++962 2 7201065
+
+Official Contact Page:
+https://www.just.edu.jo/WellnessClinics/SmokingCessationClinic/Pages/ContactUs.aspx
+
+Data Quality Note:
+The extracted contact page displays the telephone numbers and email
+in partially inconsistent or unclear formats. The original displayed
+values have been preserved without guessing missing digits or punctuation.
+
+
+Clinic Appointments and Working Hours
+
+Working hours displayed on the official appointments page:
+- Sunday: 9:00 - 3:00
+- Monday: 9:00 - 3:00
+- Tuesday: 9:00 - 3:00
+- Wednesday: 9:00 - 3:00
+
+Data Quality Note:
+The extracted source does not clearly show Thursday's working hours.
+It also does not specify whether the displayed hours are AM or PM.
+No appointment booking procedure is provided in the extracted text.
+
+Official Appointments Page:
+https://www.just.edu.jo/WellnessClinics/SmokingCessationClinic/Pages/Appointments.aspx

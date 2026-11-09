@@ -1,0 +1,17 @@
+Phishing Email Safety
+
+Recommended Security Practices:
+
+1. Do not respond to email requests for your username, password, or personal information.
+2. JUST will never send an email requesting your JUST username and password.
+3. Do not provide your username, email address, or password on any website reached through a link in an email message.
+4. Use common sense. If an email looks suspicious, it is probably malicious.
+
+Technical Support Contact:
+
+Information Technology & Communications Center (ITCC)
+Phone: +962 2 7201000 Ext. 24010
+Fax: +962 2 7201033
+Email: itcc@just.edu.jo
+
+Source: JUST Service Details - Phishing Email Messages.

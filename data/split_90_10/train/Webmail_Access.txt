@@ -1,0 +1,16 @@
+JUST Student Email - Webmail Access
+
+Students can access their university email in either of the following ways:
+
+1. Through the Jordan University of Science and Technology (JUST) website.
+2. Directly through Outlook Web:
+https://outlook.office365.com
+
+Technical Support Contact:
+
+Information Technology & Communications Center (ITCC)
+Phone: +962 2 7201000 Ext. 24010
+Fax: +962 2 7201033
+Email: itcc@just.edu.jo
+
+Source: JUST Service Details - Webmail.

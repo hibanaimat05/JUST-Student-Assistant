@@ -1,0 +1,15 @@
+Operating System and Application Patches
+
+Recommended Security Practices:
+
+1. Install operating system and application patches as soon as they become available.
+2. Enable automatic installation of patches from the vendor's website.
+
+Technical Support Contact:
+
+Information Technology & Communications Center (ITCC)
+Phone: +962 2 7201000 Ext. 24010
+Fax: +962 2 7201033
+Email: itcc@just.edu.jo
+
+Source: JUST Service Details - Operating System and Application Patches.

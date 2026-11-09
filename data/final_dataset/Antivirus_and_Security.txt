@@ -1,0 +1,17 @@
+Antivirus, Anti-Malware, and Internet Security
+
+The university provides Trend Anti-Virus software to faculty members, staff, and students.
+
+Security Recommendations:
+1. Use good antivirus software.
+2. Keep the antivirus program up to date.
+3. Schedule full system scans regularly, for example, once a week.
+
+Technical Support Contact:
+
+Information Technology & Communications Center (ITCC)
+Phone: +962 2 7201000 Ext. 24010
+Fax: +962 2 7201033
+Email: itcc@just.edu.jo
+
+Source: JUST Service Details - Anti-virus, Anti-malware and Internet Security.

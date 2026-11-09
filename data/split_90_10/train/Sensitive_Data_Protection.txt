@@ -1,0 +1,27 @@
+Sensitive Data Protection
+
+Recommended Security Practices:
+
+1. Do not store unencrypted sensitive data on your computer or digital devices.
+   Examples include:
+   - Social security numbers
+   - Passwords
+   - Credit card numbers
+   - Research data
+
+2. Mobile devices and storage media can be easily stolen. Sensitive data stored on them may be used for criminal activities.
+
+3. Make sure sensitive data is encrypted in transit.
+
+4. Useful free encryption applications are available on the Internet.
+
+5. If you are not required to retain sensitive data, purge it from your computer.
+
+Technical Support Contact:
+
+Information Technology & Communications Center (ITCC)
+Phone: +962 2 7201000 Ext. 24010
+Fax: +962 2 7201033
+Email: itcc@just.edu.jo
+
+Source: JUST Service Details - Sensitive Data.

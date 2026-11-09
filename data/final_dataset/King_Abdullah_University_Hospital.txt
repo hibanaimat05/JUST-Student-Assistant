@@ -1,0 +1,29 @@
+
+King Abdullah University Hospital (KAUH)
+
+General Information:
+The source is the official homepage of King Abdullah University Hospital.
+
+Available Website Services:
+- Search for a doctor by name.
+- Browse the list of doctors.
+- Browse doctors' departments.
+- Access information about medical centers and units.
+- View training programs.
+- Access the Media Center.
+- Browse video and photo galleries.
+
+Accreditations and Certifications Displayed:
+- Joint Commission International (JCI).
+- ISO 9001.
+- Health Care Accreditation Council (HCAC).
+- Baby-Friendly Hospital.
+
+Website:
+https://www.kauh.edu.jo/
+
+Data Quality Note:
+The extracted homepage does not provide detailed doctor listings,
+medical department descriptions, appointment procedures,
+working hours, or hospital contact details.
+These details have not been inferred or added.

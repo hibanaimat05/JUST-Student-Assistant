@@ -1,0 +1,9 @@
+JUST Student Transportation
+
+Transportation services mentioned in the source:
+- Free transportation inside the university campus.
+- Free parking inside the campus.
+- Directions and transportation information are provided for students
+  coming from Amman, Irbid, Ramtha, Zarqa, and Mafraq.
+
+Source: JUST Student Life page.

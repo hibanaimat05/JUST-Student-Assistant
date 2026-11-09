@@ -1,0 +1,29 @@
+JUST Library Services
+
+The JUST Library provides printed and electronic information resources
+for students and university staff.
+
+Services and resources mentioned in the source:
+- Printed books and electronic books.
+- Scientific journals and electronic databases.
+- Access to library resources from inside and outside the university.
+- Electronic Search Discovery (EDS) unified search index.
+- Computer laboratories.
+- Wireless internet access inside the library.
+- Radio Frequency Identification (RFID) self-service for borrowing
+  and returning library materials.
+- Document Delivery System (DDS).
+- Inter-Library Loan (ILL) service.
+- Digital Library Assistant (DLA).
+
+The source states that the library collection includes:
+- 195,000 books.
+- 50,000 volumes of back issues of scientific journals.
+- 590,000 subscribed eBooks.
+- Access to 85 databases containing approximately 156,000
+  full-text electronic journals.
+
+Library website:
+http://www.just.edu.jo/library
+
+Source: JUST Student Life page.

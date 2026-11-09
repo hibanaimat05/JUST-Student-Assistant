@@ -1,0 +1,55 @@
+JUST Student Personal Website Hosting Guide
+
+Students can create and publish a personal website using FileZilla Client or another FTP tool.
+
+1. Download FileZilla
+
+Download and install FileZilla Client:
+https://filezilla-project.org/download.php?type=client
+
+2. Configure the Connection
+
+1. Open FileZilla.
+2. Select File, then Site Manager.
+3. Select New Site and choose a name.
+4. Open the General tab and enter:
+
+Host: Students.just.edu.jo
+Port: 22
+Protocol: FTP - File Transfer Protocol
+Encryption: Use explicit FTP over TLS if available
+User: students.just.edu.jo|Student_ID
+Password: student_ID Password
+
+5. Click Connect.
+
+3. Student ID Notes
+
+- Students admitted before 2017 should use Student_No.
+- Students admitted in 2017 and later should use Student_Serial.
+- Use the vertical bar character (|), not backslash (\) or forward slash (/).
+
+4. Transfer Settings
+
+- Open the Transfer Settings tab.
+- Select Active mode.
+
+5. Upload Website Files
+
+- Drag and drop HTML files between the local site and remote site.
+- The main page must be named index.html.
+
+6. Website Address
+
+After completing the setup, the personal website will be available at:
+
+http://students.just.edu.jo/~Student_ID
+
+Technical Support Contact:
+
+Information Technology & Communications Center (ITCC)
+Phone: +962 2 7201000 Ext. 24010
+Fax: +962 2 7201033
+Email: itcc@just.edu.jo
+
+Source: JUST Service Details - Students (Web Hosting).
