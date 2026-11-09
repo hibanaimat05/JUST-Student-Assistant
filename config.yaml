@@ -5,7 +5,7 @@ project:
 
 paths:
   cpt_data: "data/cpt"
-  sft_data: "data/sft_pairs.jsonl"
+  sft_data: "data/sft_final.jsonl"
   test_data: "data/tests/test_questions.csv"
   loss_curves: "results/loss_curves"
   model_results: "results/model_results"
