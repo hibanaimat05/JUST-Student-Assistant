@@ -1,12 +1,12 @@
-def format_chat(tokenizer, messages, tokenize=False):
+def format_chat(tokenizer, messages, tokenize=False, add_generation_prompt=False):
     """
     Format conversation messages using the model's chat template.
     """
 
-    formatted_text = tokenizer.apply_chat_template(
+    formatted_output = tokenizer.apply_chat_template(
         messages,
         tokenize=tokenize,
-        add_generation_prompt=True
+        add_generation_prompt=add_generation_prompt
     )
 
-    return formatted_text
+    return formatted_output
