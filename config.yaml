@@ -1,1 +1,26 @@
+# JUST Student Assistant Configuration
 
+project:
+  name: "JUST Student Assistant"
+
+paths:
+  cpt_data: "data/cpt"
+  sft_data: "data/sft_pairs.jsonl"
+  test_data: "data/tests/test_questions.csv"
+  loss_curves: "results/loss_curves"
+  model_results: "results/model_results"
+
+model:
+  name: "REPLACE_WITH_BASE_MODEL"
+
+cpt:
+  enabled: true
+  output_dir: "results/cpt_model"
+
+sft:
+  enabled: true
+  output_dir: "results/sft_model"
+
+evaluation:
+  test_file: "data/tests/test_questions.csv"
+  output_dir: "results/model_results"
