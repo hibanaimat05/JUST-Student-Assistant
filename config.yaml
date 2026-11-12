@@ -4,14 +4,14 @@ project:
   name: "JUST Student Assistant"
 
 paths:
-  cpt_data: "data/cpt"
+  cpt_data: "data/split_90_10/train"
   sft_data: "data/sft_final.jsonl"
   test_data: "data/tests/test_questions.csv"
   loss_curves: "results/loss_curves"
   model_results: "results/model_results"
 
 model:
-  name: "REPLACE_WITH_BASE_MODEL"
+  name: "gpt2"
 
 cpt:
   enabled: true
