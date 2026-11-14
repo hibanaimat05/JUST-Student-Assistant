@@ -52,6 +52,23 @@ def validate_review(path, references):
             f"{path.name}: expected {len(references)} rows, found {len(df)}"
         )
 
+    expected_numbers = list(range(1, len(references) + 1))
+    actual_numbers = pd.to_numeric(
+        df["question_number"], errors="coerce"
+    ).tolist()
+
+    if actual_numbers != expected_numbers:
+        raise ValueError(
+            f"{path.name}: question numbers must be ordered from 1 to "
+            f"{len(references)}."
+        )
+
+    predictions = df["predicted_answer"].fillna("").astype(str).str.strip()
+    if predictions.eq("").any():
+        raise ValueError(
+            f"{path.name} contains empty predicted answers."
+        )
+
     for index, reference in enumerate(references):
         row = df.iloc[index]
 

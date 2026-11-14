@@ -11,15 +11,15 @@ paths:
   model_results: "results/model_results"
 
 model:
-  name: "gpt2"
+  name: "Qwen/Qwen2.5-0.5B-Instruct"
 
 cpt:
   enabled: true
-  output_dir: "results/cpt_model"
+  output_dir: "results/qwen_cpt_model"
 
 sft:
   enabled: true
-  output_dir: "results/sft_model"
+  output_dir: "results/qwen_sft_model"
 
 evaluation:
   test_file: "data/tests/test_questions.csv"
