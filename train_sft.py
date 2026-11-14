@@ -32,16 +32,26 @@ class SFTDataset(Dataset):
 
             prompt_messages = messages[:-1]
 
-            prompt_ids = tokenizer.apply_chat_template(
+            prompt_text = tokenizer.apply_chat_template(
                 prompt_messages,
-                tokenize=True,
+                tokenize=False,
                 add_generation_prompt=True,
             )
 
-            full_ids = tokenizer.apply_chat_template(
+            full_text = tokenizer.apply_chat_template(
                 messages,
-                tokenize=True,
+                tokenize=False,
                 add_generation_prompt=False,
+            )
+
+            prompt_ids = tokenizer.encode(
+                prompt_text,
+                add_special_tokens=False,
+            )
+
+            full_ids = tokenizer.encode(
+                full_text,
+                add_special_tokens=False,
             )
 
             full_ids = full_ids[:max_length]

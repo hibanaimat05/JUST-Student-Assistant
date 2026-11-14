@@ -1,0 +1,17 @@
+# Python temporary files
+__pycache__/
+*.py[cod]
+
+# Backup files
+*.before_chat_tokenization_fix
+*.bak
+*.backup
+
+# Previous experimental results
+results/loss_curves/cpt_loss_previous.csv
+
+# SFT training checkpoints
+results/qwen_sft_model/checkpoint-*/
+
+# Kaggle temporary files
+.ipynb_checkpoints/
