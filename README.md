@@ -241,7 +241,38 @@ These include:
 The project scoreboard is maintained in:
 
 `SCOREBOARD.md`
+### Archived Model Checkpoints
 
+Two historical GPT-2 model checkpoints are preserved as ZIP backups in Google Drive.
+
+| Backup | Model Architecture | Hidden Size | Layers | Attention Heads | Context Length |
+|---|---|---:|---:|---:|---:|
+| `CPT_checkpoint_backup.zip` | GPT2LMHeadModel | 768 | 12 | 12 | 1024 |
+| `SFT_model_backup.zip` | GPT2LMHeadModel | 768 | 12 | 12 | 1024 |
+
+Both archives were inspected through their `config.json` files and have the following configuration:
+
+- Model type: `gpt2`
+- Vocabulary size: `50,257`
+- Hidden size: `768`
+- Transformer layers: `12`
+- Attention heads: `12`
+- Maximum position embeddings: `1024`
+- Context length: `1024`
+
+**Backup files:**
+- `CPT_checkpoint_backup.zip`: Historical GPT-2 CPT checkpoint.
+- `SFT_model_backup.zip`: Historical GPT-2 SFT checkpoint.
+
+**Storage location:**
+
+Both ZIP archives are stored in the Google Drive backup folder:
+
+`JUST_Student_Assistant_Backups`
+
+These are historical GPT-2 checkpoints from earlier experiments. They are not the selected Qwen model or its CPT/SFT adapters, and they are not included in this GitHub repository.
+
+The backups are preserved for historical reference and potential reproducibility of the earlier GPT-2 experiments.
 ## 11. Current Project Status
 
 | Component | Status |
