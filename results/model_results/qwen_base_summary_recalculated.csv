@@ -1,0 +1,2 @@
+Model,Total Questions,Weighted Score,Weighted Score Percentage,Fully Correct,Partially Correct,Incorrect,Hallucination,Incomplete Answer,Refusal Error,Correct Refusal
+Qwen2.5-0.5B-Instruct Base,30,10.5,35.0,6,9,15,13,8,3,3
