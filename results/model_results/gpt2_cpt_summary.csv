@@ -1,0 +1,2 @@
+Model,Stage,Epochs,Training_Steps,Initial_Training_Loss,Final_Training_Loss,Minimum_Training_Loss,Average_Training_Loss,Maximum_Training_Loss,Loss_Reduction
+GPT-2,Continued Pre-Training,1,28,4.0594096183776855,2.5943429470062256,1.9497185945510864,2.975861076797758,4.0594096183776855,1.46506667137146

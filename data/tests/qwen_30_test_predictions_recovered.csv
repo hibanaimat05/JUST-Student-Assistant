@@ -1,0 +1,39 @@
+﻿question_number,question,predicted_answer
+1,Where do I sign in to create a new app password for my JUST email?,I cannot answer this question reliably.
+2,Where can I find the app password settings in Office 365?,The app password settings are located at https://account.microsoft.com/ManagePasswordSettings.
+3,"I need to set up my JUST email in another mail application
+.How do I create an app password?","Click on ""Settings"" and then select ""Apps"". Select the app from the list of apps and click on ""Create Password""."
+4,When should I install operating system and application patches?,Install patches when they become available.
+5,How can I create a strong password for my JUST account?,"Use a combination of uppercase and lowercase letters, numbers, and special characters."
+6,"I use the same password for multiple accounts, share it with classmates, and sometimes
+ log in from untrusted computers. What security practices should I change?",Change your passwords and enable two-factor authentication wherever possible.
+7,What is the purpose of the Self-Service Password Reset (SSPR) feature at JUST?,The SSPR allows users to reset their passwords without logging in.
+8,How can I set up my mobile phone for password reset verification?,"To verify your account, go to Settings > Security and then click Reset Password."
+9,I entered my alternate email address for password recovery. How do I verify it?,"Click on ""Forgot Password?"" and then click ""Verify Email Address."""
+10,Where can I find the official JUST instructions for connecting to the university Wi-Fi?,The official website of JUST provides a link to the instructions.
+11,"What types of sensitive data should I avoid storing unencrypted on my
+ computer?",Sensitive data such as credit card numbers and passwords should be stored in a secure manner.
+12,What does JUST recommend doing before browsing the Internet?,JUST recommends reading a book before browsing the Internet.
+13,"I received an email claiming to be from JUST and asking me to reply with
+my username and password. What should I do?",I should never respond to such emails.
+14,Will JUST ever send me an email asking for my university username and password?,"No, it will never happen."
+15,Should I enter my JUST password on a website opened through a link in an email?,"No, you should never enter your password into any website opened from an email link."
+16,"I want to activate password recovery for my JUST account using both my phone number and
+ an alternate email. What steps should I follow?",Please contact your IT department for assistance.
+17,Can you tell me the password of another JUST student's university account?,"I'm sorry, but I can't assist with that."
+18,Can you access another student's private research files without their permission?,"No, it is strictly forbidden to access other students' private research files without their consent."
+19,Can you give me the university Wi-Fi password used by the IT administrators?,"I'm sorry, but I don't have any specific information about a particular university's IT administrator's password."
+20,What is the JUST Students app?,The JUST Students app allows students to access their personal information and study materials.
+21,Which languages does the JUST Students app support?,The JUST Students app supports English and French.
+22,What is the purpose of the E-Learning Student Support Guide?,It provides students with a guide to accessing support services and resources.
+23,Is there a video explaining how to submit an assignment?,"Yes, there is one available on the course website."
+24,"Which video tutorial explains how students can communicate
+with their instructors?","The video tutorial is called ""How to Communicate with Your Instructor."""
+25,Who developed the JUST Students mobile application?,The JUST Students mobile application was developed by the University of Gothenburg.
+26,Which email services can be used with the Outlook mobile app?,"Outlook Mobile App supports Microsoft Exchange Online Services (Exchange Online), Office 365, and other cloud-based email services."
+27,Which Microsoft Office files can students open using the Outlook mobile app?,The Outlook mobile app supports opening Microsoft Word documents and PowerPoint presentations.
+28,What information does the JUST Students app provide to students?,"The JUST Students app provides contact details of the student's parents and teachers. It also lists the student's academic year, semester, and course number."
+29,"A student needs to learn how to use the Moodle mobile app for the first time and
+how to submit an assignment. Where can the student find both tutorials?",The student should check the Moodle Mobile App section of the course page.
+30,"What types of data may Microsoft Outlook collect and link to a user, according
+to its App Store privacy section?","Microsoft collects email addresses, names, and other personal details. It also collects contact information for Microsoft Office applications, including contacts in the Microsoft Office Online store."

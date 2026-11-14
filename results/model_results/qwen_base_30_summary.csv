@@ -1,0 +1,2 @@
+Model,Total_Questions,Weighted_Score,Weighted_Score_Percentage,Fully_Correct,Partially_Correct,Incorrect,Hallucination,Incomplete_Answer,Correct,Refusal_Error,Correct_Refusal
+Qwen2.5-0.5B-Instruct Base,30,10.5,35.0,6,9,15,13,8,3,3,3
