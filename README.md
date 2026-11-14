@@ -2,300 +2,192 @@
 
 ## 1. Project Overview
 
-JUST Student Assistant is an AI-powered conversational assistant
-designed to help students at Jordan University of Science and
-Technology (JUST) access university-related information.
+JUST Student Assistant is an AI-powered assistant designed to help students at Jordan University of Science and Technology (JUST) access university information.
 
-The project explores the use of Large Language Models (LLMs) to
-answer student questions using information collected from
-university-related resources.
+The project combines Large Language Models (LLMs), model fine-tuning, and Retrieval-Augmented Generation (RAG).
 
-The assistant aims to provide accessible, organized, and
-source-grounded answers about university services and student
-support resources.
+## 2. Objectives
 
-## 2. Project Objectives
-
-- Answer questions about JUST student services and resources.
-- Organize university information into a usable knowledge base.
-- Apply Continued Pre-Training (CPT) and Supervised Fine-Tuning (SFT).
-- Evaluate model responses using a separate test-question set.
-- Analyze answer quality, hallucinations, and refusal behavior.
+- Answer questions about JUST services.
+- Build a university knowledge base.
+- Apply CPT and SFT.
+- Retrieve relevant information using RAG.
+- Reduce unsupported answers.
+- Evaluate answer quality.
 
 ## 3. Technologies
 
 - Python
 - PyTorch
 - Hugging Face Transformers
-- Hugging Face PEFT (LoRA)
-- Pandas
+- PEFT (LoRA)
+- Qwen2.5-0.5B-Instruct
+- Sentence Transformers
 - Scikit-learn
-- YAML
-- Large Language Models (LLMs)
+- NumPy and Pandas
 
-## 4. Model and Training Approach
+## 4. Model Training
 
-The project includes experiments with:
+### Base Model
 
-- GPT-2 for an earlier CPT experiment.
-- Qwen2.5-0.5B-Instruct for the Base and SFT evaluation experiments.
+Qwen/Qwen2.5-0.5B-Instruct
 
 ### Continued Pre-Training (CPT)
 
-CPT adapts a pre-trained language model using the collected
-university-related text documents.
-
-The recovered GPT-2 CPT experiment used:
 - 34 training text documents.
-- Sequence length of 512 tokens.
 - One training epoch.
-- 28 training steps.
-
-The available GPT-2 training-loss results are documented in
-`results/model_results/cpt_loss.csv`.
-
-Qwen CPT training artifacts are not currently available in the
-recovered repository, so no Qwen CPT metrics are claimed here.
+- LoRA adaptation.
+- Adapter: results/qwen_cpt_model/checkpoint-epoch-1/
 
 ### Supervised Fine-Tuning (SFT)
 
-SFT uses question-answer pairs to teach the model how to respond
-to student questions.
-
-The prepared dataset contains 304 question-answer records.
-
-The current `train_sft.py` script supports:
-- Qwen2.5-0.5B-Instruct by default.
+- 304 valid question-answer records.
+- 273 training records.
+- 31 validation records.
+- 3 epochs.
 - LoRA fine-tuning.
-- A 90% training and 10% validation split.
 - Answer-only loss.
-- Epoch-based evaluation and checkpoint saving.
 
-The script has been prepared and syntax-checked. A new training
-run has not been performed using this recovered script.
+Final validation loss: 2.2556858.
 
-## 5. Project Pipeline
+The validation loss measures training performance and does not directly represent factual accuracy.
+
+## 5. Retrieval-Augmented Generation (RAG)
+
+Implementation: src/rag_assistant.py
+
+The RAG pipeline:
+1. Encodes the student's question using multilingual embeddings.
+2. Retrieves relevant university document chunks.
+3. Calculates cosine similarity.
+4. Rejects questions below the similarity threshold.
+5. Extracts structured information when possible.
+6. Uses the language model to generate context-based answers.
+
+Configuration:
+- Embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- Chunk size: 700 characters.
+- Chunk overlap: 120 characters.
+- Top K: 3.
+- Similarity threshold: 0.55.
+
+Supported structured information includes phone numbers, fax numbers, emails, URLs, antivirus information, and housing application instructions.
+
+### Initial RAG Tests
+
+Six initial functional tests were performed:
+- ITCC fax.
+- ITCC phone.
+- ITCC email.
+- Antivirus software.
+- Housing application instructions.
+- Out-of-scope question.
+
+Observed result: 6/6 tests passed.
+
+This is a preliminary test, not a comprehensive performance benchmark.
+
+## 6. Project Pipeline
 
 1. Data collection.
-2. Document extraction and cleaning.
+2. Text extraction and cleaning.
 3. Knowledge-base preparation.
-4. Training and validation data preparation.
-5. Continued Pre-Training (CPT) experiments.
-6. Supervised Fine-Tuning (SFT) preparation and experiments.
-7. Model evaluation.
-8. Results analysis and documentation.
+4. CPT.
+5. SFT dataset preparation.
+6. SFT.
+7. RAG implementation.
+8. Evaluation and documentation.
 
-## 6. Repository Structure
+## 7. Repository Structure
 
-```text
-JUST-Student-Assistant/
-│
-├── README.md
-├── SCOREBOARD.md
-├── config.yaml
-├── train_cpt.py
-├── train_sft.py
-├── score.py
-│
-├── src/
-│   ├── data_preparation.py
-│   ├── model_loading.py
-│   └── chat_template.py
-│
-├── data/
-│   ├── cpt/
-│   ├── final_dataset/
-│   ├── split_90_10/
-│   │   ├── train/
-│   │   └── test/
-│   ├── sft_final.jsonl
-│   └── tests/
-│
-└── results/
-    ├── loss_curves/
-    └── model_results/
-```
-
-The structure above describes the main project directories.
-Some experimental artifacts and model checkpoints may not be
-present in the recovered repository.
-
-## 7. Dataset Information
-
-### CPT Data
-
-The CPT data consists of university-related text documents
-prepared for language-model adaptation.
-
-The project includes cleaned text files and a 90/10 document
-split into training and held-out test directories.
-
-### SFT Data
-
-The SFT dataset is stored in:
-
-`data/sft_final.jsonl`
-
-Each record contains:
-- `question`
-- `answer`
-
-The dataset currently contains 304 valid question-answer records.
-
-### Evaluation Data
-
-The evaluation questions are stored in:
-
-`data/tests/test_questions.csv`
-
-The reference answers are stored in:
-
-`data/tests/test_reference_answers.jsonl`
-
-The evaluation set contains 30 questions.
+- train_cpt.py
+- train_sft.py
+- score.py
+- config.yaml
+- src/data_preparation.py
+- src/model_loading.py
+- src/chat_template.py
+- src/rag_assistant.py
+- data/cpt/
+- data/sft_final.jsonl
+- data/split_90_10/
+- data/tests/
+- results/qwen_cpt_model/
+- results/qwen_sft_model/
 
 ## 8. Evaluation
 
-The current Base-versus-SFT evaluation uses 30 manually reviewed
-questions.
-
-Scoring:
-- 1.0 = Fully correct.
-- 0.5 = Partially correct.
-- 0.0 = Incorrect.
-
-The current weighted scores are:
+Previously recorded Base-versus-SFT manual review:
 - Qwen Base: 35%.
 - Qwen SFT: 45%.
 
-These results indicate a 10 percentage-point improvement in
-the current manual review.
+SFT training validation loss: 2.2556858.
 
-Important evaluation limitations:
-- A second independent human rater is still required.
-- Equivalent generation settings between Base and SFT
-  must be verified.
-- Qwen CPT evaluation is not currently available.
-- Latency and the required perplexity comparisons are not
-  fully documented in the recovered results.
+These are different evaluation measures and should not be compared directly.
 
-See `SCOREBOARD.md` for the available metrics and detailed
-evaluation status.
+Limitations:
+- The initial RAG test set is small.
+- Independent second-rater review is recommended.
+- Broader retrieval and answer-quality evaluation is still needed.
+- Latency evaluation requires further documentation.
+
+See SCOREBOARD.md for available evaluation records.
 
 ## 9. Running the Scripts
 
 Run commands from the repository root.
 
-### Inspect SFT training options
+Inspect training options:
 
-```bash
-python train_sft.py --help
-```
+    python train_cpt.py --help
+    python train_sft.py --help
 
-The default SFT base model is:
+Run the evaluation summary:
 
-`Qwen/Qwen2.5-0.5B-Instruct`
+    python score.py
 
-To train from a recovered CPT adapter, provide its directory
-using `--cpt-adapter`. Do not provide this option unless the
-adapter is actually available.
+Start training:
 
-Training requires a suitable runtime and the required Python
-packages. The script does not automatically provide a trained
-model checkpoint.
+    python train_cpt.py
+    python train_sft.py
 
-### Run the evaluation summary script
+Training requires the appropriate dependencies and a compatible GPU environment. Review config.yaml before running.
 
-```bash
-python score.py
-```
+### RAG Module
 
-This script calculates summary metrics from the existing
-manually reviewed Base and SFT evaluation CSV files.
+The module is src/rag_assistant.py.
 
-It does not generate model predictions or perform new
-model inference.
+Main functions:
+- configure_rag()
+- retrieve()
+- ask_just_assistant()
+- just_assistant()
 
-### CPT training
+The embedding model, chunks, embeddings, tokenizer, and language model must be loaded and passed to configure_rag() before using the assistant.
 
-```bash
-python train_cpt.py
-```
+## 10. Historical GPT-2 Experiments
 
-The current CPT script requires CUDA. Review `config.yaml`
-and the training settings before running it.
+Earlier CPT and SFT experiments used GPT-2. Historical checkpoint backups are stored separately in Google Drive under JUST_Student_Assistant_Backups.
 
-## 10. Results and Documentation
+These are historical experiments and are not the selected Qwen model.
 
-Important result files are stored in:
-
-`results/model_results/`
-
-These include:
-- Base model predictions and evaluation review.
-- SFT evaluation results.
-- Base-versus-SFT comparison.
-- GPT-2 CPT training-loss records.
-- Recalculated evaluation summary CSV files.
-
-The project scoreboard is maintained in:
-
-`SCOREBOARD.md`
-### Archived Model Checkpoints
-
-Two historical GPT-2 model checkpoints are preserved as ZIP backups in Google Drive.
-
-| Backup | Model Architecture | Hidden Size | Layers | Attention Heads | Context Length |
-|---|---|---:|---:|---:|---:|
-| `CPT_checkpoint_backup.zip` | GPT2LMHeadModel | 768 | 12 | 12 | 1024 |
-| `SFT_model_backup.zip` | GPT2LMHeadModel | 768 | 12 | 12 | 1024 |
-
-Both archives were inspected through their `config.json` files and have the following configuration:
-
-- Model type: `gpt2`
-- Vocabulary size: `50,257`
-- Hidden size: `768`
-- Transformer layers: `12`
-- Attention heads: `12`
-- Maximum position embeddings: `1024`
-- Context length: `1024`
-
-**Backup files:**
-- `CPT_checkpoint_backup.zip`: Historical GPT-2 CPT checkpoint.
-- `SFT_model_backup.zip`: Historical GPT-2 SFT checkpoint.
-
-**Storage location:**
-
-Both ZIP archives are stored in the Google Drive backup folder:
-
-`JUST_Student_Assistant_Backups`
-
-These are historical GPT-2 checkpoints from earlier experiments. They are not the selected Qwen model or its CPT/SFT adapters, and they are not included in this GitHub repository.
-
-The backups are preserved for historical reference and potential reproducibility of the earlier GPT-2 experiments.
 ## 11. Current Project Status
 
 | Component | Status |
 |---|---|
 | Data preparation | Completed |
 | CPT document split | Completed |
-| SFT dataset preparation | Completed |
-| GPT-2 CPT experiment | Historical results available |
-| Qwen Base evaluation | Available |
-| Qwen SFT evaluation | Available |
-| SFT training script | Prepared; new run not performed |
-| Evaluation summary script | Prepared and tested on existing reviews |
-| Qwen CPT artifacts | Not available in recovered repository |
-| Independent second-rater review | Pending |
-| Final evaluation verification | Pending |
+| Qwen CPT training | Completed |
+| Qwen SFT training | Completed |
+| CPT adapter | Saved |
+| SFT adapter | Saved |
+| RAG implementation | Completed |
+| Structured extraction | Implemented |
+| Initial RAG tests | 6/6 passed |
+| Independent second-rater review | Recommended |
+| Broader RAG evaluation | Pending |
+| Final integration verification | Pending |
 
 ## 12. Institution
 
 Jordan University of Science and Technology (JUST)
-
----
-
-This repository documents the available implementation,
-experiments, evaluation results, and outstanding work.
-Results are reported only when supporting files or records
-are available in the recovered project.
