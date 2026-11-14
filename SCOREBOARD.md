@@ -2,12 +2,15 @@
 
 ## 1. Project Evaluation Overview
 
-The current recovered evaluation compares:
+The current evaluation includes three Qwen2.5-0.5B-Instruct variants:
 
-- Qwen2.5-0.5B-Instruct Base
-- Qwen2.5-0.5B-Instruct SFT
+- Base
+- Continued Pre-Training (CPT)
+- Supervised Fine-Tuning (SFT)
 
-Evaluation dataset: 30 test questions.
+Evaluation dataset: 30 test questions per model.
+CPT scores are provisional AI-assisted assessments and require
+human verification.
 
 Scoring system:
 - 1.0 = Fully correct
@@ -80,15 +83,23 @@ Notes:
 - Validation loss and CPT perplexity are not available
   in the currently recovered results.
 
-## 4. Qwen CPT Status
+## 4. Qwen CPT Evaluation
 
-- Qwen CPT training was performed in an earlier environment,
-  according to the historical experiment records.
-- Its adapter and verifiable training artifacts are not
-  present in the currently recovered repository.
-- Qwen CPT evaluation is not included in the current
-  Base-versus-SFT comparison.
-- No Qwen CPT metrics are claimed in this scoreboard.
+| Metric | Qwen CPT |
+|---|---:|
+| Total Questions | 30 |
+| Weighted Score | 9 / 30 |
+| Weighted Score (%) | 30% |
+| Fully Correct | 4 |
+| Partially Correct | 10 |
+| Incorrect | 16 |
+
+Evaluation notes:
+- CPT evaluation was completed using AI-assisted review.
+- These scores are provisional and have not been verified
+  by independent human raters.
+- CPT results should not be treated as final human evaluation.
+- The CPT manual review file contains the question-level scores.
 
 ## 5. Available Evaluation and Result Files
 
@@ -105,6 +116,16 @@ Notes:
 - `data/tests/qwen_30_evaluation_scored.csv`
 - `results/model_results/qwen_30_evaluation_scored.csv`
 - `results/model_results/qwen_sft_summary_recalculated.csv`
+
+### Qwen CPT Evaluation
+
+- `results/model_results/cpt_manual_review.csv`
+
+### Three-Model Predictions and Review
+
+- `results/model_results/phase2_three_model_predictions.csv`
+- `results/model_results/phase2_three_model_review.csv`
+- `results/model_results/phase2_human_evaluation.xlsx`
 
 ### Base vs. SFT Comparison
 
@@ -129,9 +150,11 @@ latency measurement, or independent human scoring.
 
 ## 7. Pending Work
 
-1. Obtain a second independent human evaluation of the
+1. Verify the provisional CPT scores through independent
+   human evaluation.
+2. Obtain a second independent human evaluation of the
    30 test questions.
-2. Verify equivalent generation settings for Base and SFT.
+3. Verify equivalent generation settings for Base, CPT, and SFT.
 3. Recover and verify Qwen CPT adapters and training logs,
    if available.
 4. Complete the required validation and perplexity analysis
