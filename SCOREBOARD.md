@@ -175,3 +175,31 @@ latency measurement, or independent human scoring.
 
 This scoreboard reports the results and artifacts currently
 available in the recovered project repository.
+
+
+## 9. AI-Assisted Evaluation Suggestions (November 2026)
+
+A separate question-level evaluation workbook was prepared
+for the three Qwen2.5-0.5B-Instruct variants.
+
+Evaluation dataset: 30 questions per model.
+
+| Metric | Qwen Base | Qwen CPT | Qwen SFT |
+|---|---:|---:|---:|
+| Total Questions | 30 | 30 | 30 |
+| AI-Assisted Suggested Score | 8 / 30 | 8.5 / 30 | 11.5 / 30 |
+| Suggested Percentage | 26.67% | 28.33% | 38.33% |
+
+Important notes:
+- These scores are AI-assisted suggestions based on question-level
+  comparisons with the reference answers.
+- The project team has reviewed some of the suggested assessments.
+- These scores are separate from the previously recorded evaluation
+  results in Sections 2 and 4.
+- They must not replace the existing manual-review results.
+- Independent human verification and final score approval are pending.
+- Reviewer 1, Reviewer 2, and Final Score fields remain unfilled
+  in the suggestion workbook.
+
+Workbook:
+`results/model_results/phase2_human_evaluation_ALL_suggestions.xlsx`
