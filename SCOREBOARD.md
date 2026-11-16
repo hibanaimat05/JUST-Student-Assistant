@@ -9,8 +9,9 @@ The current evaluation includes three Qwen2.5-0.5B-Instruct variants:
 - Supervised Fine-Tuning (SFT)
 
 Evaluation dataset: 30 test questions per model.
-CPT scores are provisional AI-assisted assessments and require
-human verification.
+Earlier CPT scores were provisional AI-assisted assessments.
+A separate independent human evaluation of Base, CPT, and SFT
+was subsequently completed; see Section 12.
 
 Scoring system:
 - 1.0 = Fully correct
@@ -95,9 +96,9 @@ Notes:
 | Incorrect | 16 |
 
 Evaluation notes:
-- CPT evaluation was completed using AI-assisted review.
-- These scores are provisional and have not been verified
-  by independent human raters.
+- This section reports the earlier AI-assisted CPT evaluation.
+- Its scores remain provisional and separate from the later
+  independent human evaluation reported in Section 12.
 - CPT results should not be treated as final human evaluation.
 - The CPT manual review file contains the question-level scores.
 
@@ -150,17 +151,17 @@ latency measurement, or independent human scoring.
 
 ## 7. Pending Work
 
-1. Verify the provisional CPT scores through independent
-   human evaluation.
-2. Obtain a second independent human evaluation of the
-   30 test questions.
-3. Verify equivalent generation settings for Base, CPT, and SFT.
-3. Recover and verify Qwen CPT adapters and training logs,
+1. Verify that the three-model evaluation dataset is independent
+   of all training and fine-tuning data.
+2. Recover and verify Qwen CPT adapters and training logs,
    if available.
-4. Complete the required validation and perplexity analysis
-   where supporting artifacts are available.
-5. Measure and document average inference latency.
-6. Verify the final repository contents and documentation.
+3. Review and validate the available inference latency results.
+4. Complete any remaining validation analysis where supporting
+   artifacts are available.
+5. Verify the final repository contents and documentation.
+
+The independent human evaluation of Base, CPT, and SFT has
+been completed and is documented in Section 12.
 
 ## 8. Reporting Notes
 
@@ -285,3 +286,76 @@ independent held-out test set.
 ### Status
 
 Perplexity calculation completed for Base, CPT, and SFT.
+
+
+## 12. Independent Human Evaluation Results (November 2026)
+
+An independent human evaluation was completed for the three
+Qwen2.5-0.5B-Instruct model variants: Base, CPT, and SFT.
+
+Evaluation setup:
+- Test questions: 30 per model.
+- Human reviewers: 2 independent reviewers.
+- Total model answers evaluated: 90.
+- Total individual ratings: 180.
+- Scoring system:
+  - 1.0 = Fully correct
+  - 0.5 = Partially correct
+  - 0.0 = Incorrect
+
+### Human Evaluation Summary
+
+| Metric | Qwen Base | Qwen CPT | Qwen SFT |
+|---|---:|---:|---:|
+| Reviewer 1 Average | 0.3333 | 0.3167 | 0.3667 |
+| Reviewer 2 Average | 0.2667 | 0.2500 | 0.2667 |
+| Final Average | 0.3000 | 0.2833 | 0.3167 |
+| Final Average (%) | 30.00% | 28.33% | 31.67% |
+| Fully Correct Ratings | 6 | 7 | 6 |
+| Partially Correct Ratings | 24 | 20 | 26 |
+| Incorrect Ratings | 30 | 33 | 28 |
+| Exact Agreement | 80.00% | 80.00% | 80.00% |
+| Weighted Cohen's Kappa | 0.7750 | 0.7931 | 0.7739 |
+
+Note: Correct, partially correct, and incorrect counts represent
+the 60 individual ratings per model (30 answers rated by two
+reviewers), not unique questions.
+
+### Interpretation
+
+- Qwen SFT achieved the highest final average score (0.3167).
+- Qwen Base achieved a final average score of 0.3000.
+- Qwen CPT achieved a final average score of 0.2833.
+- SFT showed a small improvement over Base in this human evaluation.
+- CPT did not outperform Base according to the final average score.
+- Exact agreement between the two reviewers was 80% for all models.
+- Weighted Cohen's Kappa ranged from 0.7739 to 0.7931.
+
+These results describe the evaluated set of 30 questions per model.
+They do not establish statistical significance or guarantee
+performance on unseen questions.
+
+### Evaluation Method and Limitations
+
+- Both reviewers evaluated the same 30 answers for each model.
+- The final average combines the 60 individual ratings per model.
+- Weighted Cohen's Kappa was calculated using ordinal categories:
+  0 = Incorrect, 1 = Partially correct, and 2 = Fully correct.
+- Blank error-type fields were retained where the corresponding
+  score was 1.0; no error type was inferred or added.
+- Human ratings assess answer quality against the supplied
+  reference answers and evaluation rubric.
+- The results should be interpreted alongside perplexity,
+  latency, and other evaluation metrics.
+
+### Human Evaluation Files
+
+- `results/model_results/phase2_human_evaluation_reviewer1.xlsx`
+- `results/model_results/phase2_human_evaluation_reviewer2.xlsx`
+- `results/model_results/phase2_human_evaluation_summary.csv`
+- `results/model_results/phase2_human_evaluation_summary.xlsx`
+
+### Status
+
+Independent human evaluation completed for Base, CPT, and SFT.
+The summary files were generated from the two reviewers' ratings.
