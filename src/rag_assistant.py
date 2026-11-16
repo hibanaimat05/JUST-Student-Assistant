@@ -1,4 +1,6 @@
+
 import re
+import torch
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -7,25 +9,114 @@ chunks = None
 chunk_embeddings = None
 tokenizer = None
 model = None
+
 RAG_THRESHOLD = 0.55
 RAG_TOP_K = 3
 
-def configure_rag(embedding_model_obj, chunks_obj, embeddings_obj, tokenizer_obj, model_obj, threshold=0.55, top_k=3):
-    global embedding_model, chunks, chunk_embeddings, tokenizer, model, RAG_THRESHOLD, RAG_TOP_K
+FALLBACK_ANSWER = (
+    "لا تتوفر لدي معلومات كافية للإجابة عن هذا السؤال "
+    "من قاعدة بيانات الجامعة."
+)
+
+
+def configure_rag(
+    embedding_model_obj,
+    chunks_obj,
+    embeddings_obj,
+    tokenizer_obj,
+    model_obj,
+    threshold=0.55,
+    top_k=3
+):
+    global embedding_model, chunks, chunk_embeddings
+    global tokenizer, model, RAG_THRESHOLD, RAG_TOP_K
+
+    if embedding_model_obj is None:
+        raise ValueError("Embedding model is missing.")
+
+    if not chunks_obj:
+        raise ValueError("Knowledge base chunks are empty.")
+
+    if embeddings_obj is None:
+        raise ValueError("Chunk embeddings are missing.")
+
+    if tokenizer_obj is None or model_obj is None:
+        raise ValueError("Tokenizer or language model is missing.")
+
+    if not 0 <= threshold <= 1:
+        raise ValueError("Threshold must be between 0 and 1.")
+
+    if top_k < 1:
+        raise ValueError("top_k must be at least 1.")
+
+    embeddings = np.asarray(embeddings_obj)
+
+    if embeddings.ndim != 2:
+        raise ValueError("Chunk embeddings must be a 2D array.")
+
+    if len(chunks_obj) != len(embeddings):
+        raise ValueError(
+            "Number of chunks must match number of embeddings."
+        )
+
+    if not np.isfinite(embeddings).all():
+        raise ValueError("Embeddings contain invalid values.")
+
     embedding_model = embedding_model_obj
     chunks = chunks_obj
-    chunk_embeddings = embeddings_obj
+    chunk_embeddings = embeddings
     tokenizer = tokenizer_obj
     model = model_obj
+
     RAG_THRESHOLD = threshold
     RAG_TOP_K = top_k
 
-def retrieve(question, top_k=3):
+    return True
+
+
+def validate_rag_configuration():
+    if any(
+        item is None
+        for item in [
+            embedding_model,
+            chunks,
+            chunk_embeddings,
+            tokenizer,
+            model
+        ]
+    ):
+        raise RuntimeError(
+            "RAG is not configured. Call configure_rag() first."
+        )
+
+    if len(chunks) == 0:
+        raise RuntimeError("Knowledge base is empty.")
+
+
+def retrieve(question, top_k=None):
+    validate_rag_configuration()
+
+    if not isinstance(question, str) or not question.strip():
+        raise ValueError("Question must be a non-empty string.")
+
+    top_k = RAG_TOP_K if top_k is None else top_k
+
+    if top_k < 1:
+        raise ValueError("top_k must be at least 1.")
+
     query_embedding = embedding_model.encode(
         [question],
         convert_to_numpy=True,
         normalize_embeddings=True
     )
+
+    query_embedding = np.asarray(query_embedding)
+
+    if query_embedding.ndim != 2:
+        raise ValueError("Invalid query embedding shape.")
+
+    if query_embedding.shape[1] != chunk_embeddings.shape[1]:
+        raise ValueError("Query and document embedding dimensions differ.")
 
     scores = cosine_similarity(
         query_embedding,
@@ -46,9 +137,24 @@ def retrieve(question, top_k=3):
     return results
 
 
-def ask_just_assistant(question, top_k=3):
-
+def get_relevant_results(question, top_k=None):
     results = retrieve(question, top_k=top_k)
+
+    return [
+        item for item in results
+        if item["score"] >= RAG_THRESHOLD
+    ]
+
+
+def ask_just_assistant(question, top_k=None):
+    results = get_relevant_results(question, top_k=top_k)
+
+    if not results:
+        return {
+            "question": question,
+            "answer": FALLBACK_ANSWER,
+            "sources": []
+        }
 
     context = "\n\n".join(
         f"Source: {item['source']}\n{item['text']}"
@@ -60,12 +166,12 @@ def ask_just_assistant(question, top_k=3):
             "role": "system",
             "content": """You are JUST Student Assistant.
 
-Answer the user's question using ONLY the provided university context.
+Answer using ONLY the provided university context.
 
 Rules:
 1. Use only facts supported by the context.
 2. Never invent phone numbers, emails, dates, or links.
-3. If the answer is not available in the context, say:
+3. If the answer is unavailable, say:
    لا تتوفر لدي معلومات كافية للإجابة عن هذا السؤال.
 4. Answer in the same language as the user's question.
 5. Be clear and concise."""
@@ -111,9 +217,9 @@ Answer:"""
     return {
         "question": question,
         "answer": answer,
-        "sources": [
+        "sources": list(dict.fromkeys(
             item["source"] for item in results
-        ]
+        ))
     }
 
 
@@ -133,6 +239,7 @@ def extract_facts(text):
             text,
             flags=re.IGNORECASE
         )
+
         if matches:
             facts[key] = matches
 
@@ -142,6 +249,16 @@ def extract_facts(text):
 def detect_fact_type(question):
     question = question.lower().strip()
 
+    # Password-reset questions must not trigger contact extraction
+    reset_terms = [
+        "password", "reset", "forgot",
+        "كلمة المرور", "كلمة السر",
+        "إعادة تعيين", "نسيت"
+    ]
+
+    if any(term in question for term in reset_terms):
+        return None
+
     if any(word in question for word in ["فاكس", "fax"]):
         return "fax"
 
@@ -150,23 +267,29 @@ def detect_fact_type(question):
     ]):
         return "phone"
 
-    if any(word in question for word in [
-        "إيميل", "ايميل",
-        "بريد إلكتروني", "البريد الإلكتروني",
-        "البريد الالكتروني", "email"
-    ]):
+    contact_terms = [
+        "email address", "contact email",
+        "what is the email", "email of",
+        "إيميل", "ايميل", "البريد الإلكتروني",
+        "البريد الالكتروني", "عنوان البريد"
+    ]
+
+    if any(term in question for term in contact_terms):
         return "email"
 
     return None
 
 
-def answer_contact_question(question, top_k=3):
+def answer_contact_question(question, top_k=None):
     fact_type = detect_fact_type(question)
 
     if fact_type is None:
-        return "لم أتمكن من تحديد نوع المعلومة المطلوبة."
+        return {
+            "answer": "لم أتمكن من تحديد نوع المعلومة المطلوبة.",
+            "source": None
+        }
 
-    results = retrieve(question, top_k=top_k)
+    results = get_relevant_results(question, top_k=top_k)
 
     for result in results:
         facts = extract_facts(result["text"])
@@ -179,15 +302,24 @@ def answer_contact_question(question, top_k=3):
                 "source": result["source"]
             }
 
-    return "لم يتم العثور على المعلومة في المصادر المسترجعة."
+    return {
+        "question": question,
+        "answer": FALLBACK_ANSWER,
+        "source": None
+    }
 
 
-def check_retrieval_relevance(question, top_k=3, threshold=0.60):
+def check_retrieval_relevance(
+    question,
+    top_k=None,
+    threshold=None
+):
     results = retrieve(question, top_k=top_k)
 
     if not results:
         return "لا توجد مصادر مسترجعة."
 
+    threshold = RAG_THRESHOLD if threshold is None else threshold
     best_score = results[0]["score"]
 
     print("Question:", question)
@@ -195,24 +327,24 @@ def check_retrieval_relevance(question, top_k=3, threshold=0.60):
     print("Threshold:", threshold)
 
     if best_score < threshold:
-        return "لا أملك معلومات كافية للإجابة عن هذا السؤال من قاعدة بيانات الجامعة."
+        return FALLBACK_ANSWER
 
     return "تم العثور على مصدر يحتمل أنه مرتبط بالسؤال."
 
 
 def just_assistant(question):
-    results = retrieve(question, top_k=RAG_TOP_K)
+    results = get_relevant_results(question, top_k=RAG_TOP_K)
 
-    if not results or results[0]["score"] < RAG_THRESHOLD:
+    if not results:
         return {
-            "answer": "لا أملك معلومات كافية للإجابة عن هذا السؤال من قاعدة بيانات الجامعة.",
+            "answer": FALLBACK_ANSWER,
             "source": None,
             "method": "Rejection"
         }
 
-    # 1. Contact Extraction
     fact_type = detect_fact_type(question)
 
+    # Contact information extraction
     if fact_type:
         for result in results:
             facts = extract_facts(result["text"])
@@ -224,7 +356,7 @@ def just_assistant(question):
                     "method": "Structured Extraction"
                 }
 
-    # 2. Antivirus Extraction
+    # Antivirus information extraction
     if any(word in question.lower() for word in [
         "مكافحة الفيروسات", "antivirus", "anti-virus"
     ]):
@@ -242,7 +374,7 @@ def just_assistant(question):
                     "method": "Structured Extraction"
                 }
 
-    # 3. Housing Extraction
+    # Housing information extraction
     if any(word in question.lower() for word in [
         "سكن", "إسكان", "housing"
     ]):
@@ -270,15 +402,14 @@ def just_assistant(question):
                     "method": "Structured Extraction"
                 }
 
-    # 4. General RAG + Qwen
-    rag_result = ask_just_assistant(question, top_k=RAG_TOP_K)
+    # General RAG + Qwen
+    rag_result = ask_just_assistant(
+        question,
+        top_k=RAG_TOP_K
+    )
 
     return {
         "answer": rag_result["answer"],
-        "source": ", ".join(
-            dict.fromkeys(r["source"] for r in results)
-        ),
+        "source": ", ".join(rag_result["sources"]) or None,
         "method": "RAG + Qwen"
     }
-
-
