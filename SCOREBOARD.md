@@ -236,3 +236,52 @@ This verification applies to the three-model evaluation
 that generated `phase2_three_model_predictions.csv`.
 It does not independently establish the generation settings
 used for earlier separate Base, SFT, or CPT evaluations.
+
+
+## 11. Perplexity Evaluation Results
+
+Perplexity evaluation was completed for the three Qwen2.5-0.5B-Instruct
+model variants using 30 question-reference answer pairs.
+
+### Evaluation Results
+
+| Metric | Qwen Base | Qwen CPT | Qwen SFT |
+|---|---:|---:|---:|
+| Test Questions | 30 | 30 | 30 |
+| Answer Tokens | 764 | 764 | 764 |
+| Average NLL | 3.142745 | 3.031491 | 2.564734 |
+| Perplexity | 23.167378 | 20.728115 | 12.997207 |
+
+### Interpretation
+
+- Qwen CPT achieved approximately 10.53% lower perplexity than Qwen Base.
+- Qwen SFT achieved approximately 43.90% lower perplexity than Qwen Base.
+- Qwen SFT achieved approximately 37.29% lower perplexity than Qwen CPT.
+
+Qwen SFT obtained the lowest perplexity among the three evaluated models.
+
+Lower perplexity indicates better prediction of the reference answer tokens
+under the evaluation setup. It does not independently establish factual
+correctness or overall response quality.
+
+### Evaluation Method
+
+- Base model: Qwen/Qwen2.5-0.5B-Instruct
+- CPT: Base model with the CPT LoRA adapter.
+- SFT: Base model with the SFT LoRA adapter.
+- Evaluation examples: 30.
+- Reference answer tokens: 764 per model.
+- Only reference answer tokens were included in the loss calculation.
+- The same questions and reference answers were used for all three models.
+
+The independence of this evaluation dataset from all training and
+fine-tuning data must be verified before describing it as an
+independent held-out test set.
+
+### Result File
+
+- `results/model_results/phase2_perplexity_results.csv`
+
+### Status
+
+Perplexity calculation completed for Base, CPT, and SFT.
