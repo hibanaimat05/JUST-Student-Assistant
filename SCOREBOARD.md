@@ -203,3 +203,36 @@ Important notes:
 
 Workbook:
 `results/model_results/phase2_human_evaluation_ALL_suggestions.xlsx`
+
+
+## 10. Standardized Generation Settings
+
+The three-model evaluation (Base, CPT, and SFT) used a shared
+generation configuration in the evaluation notebook.
+
+Generation settings:
+
+| Parameter | Value |
+|---|---|
+| Base Model | Qwen/Qwen2.5-0.5B-Instruct |
+| max_new_tokens | 150 |
+| do_sample | False |
+| pad_token_id | tokenizer.pad_token_id |
+| eos_token_id | tokenizer.eos_token_id |
+| Test Questions | 30 per model |
+| Total Predictions | 90 |
+
+Model variants:
+- Base: Original pretrained model without an adapter.
+- CPT: Base model with the CPT adapter.
+- SFT: Base model with the SFT adapter.
+
+All three variants were evaluated using the same
+`model.generate()` parameters and the same test questions.
+
+Scope limitation:
+
+This verification applies to the three-model evaluation
+that generated `phase2_three_model_predictions.csv`.
+It does not independently establish the generation settings
+used for earlier separate Base, SFT, or CPT evaluations.
